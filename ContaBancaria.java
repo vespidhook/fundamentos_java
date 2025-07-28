@@ -7,19 +7,19 @@ public class ContaBancaria {
         return saldo;
     }
 
-    public void depositar(double valor) {
+    public void depositar(double valor) throws SaldoInsuficienteException {
         if (valor > 0) {
             this.saldo = this.saldo + valor;
         } else {
-            System.out.println("O valor é inválido!");
+            throw new SaldoInsuficienteException();
         }
     }
 
-    public void sacar(double valor) {
+    public void sacar(double valor) throws SacarException {
         if (valor > 0 && valor <= this.saldo) {
             this.saldo = this.saldo - valor;
         } else {
-            System.out.println("O seu saldo é insuficiente!");
+            throw new SacarException();
         }
     }
 }

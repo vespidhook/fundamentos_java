@@ -23,7 +23,7 @@ public class ExcecaoPrincipal {
         System.out.println("Linha 24");
 
         try {
-            lancarExcecao(122);
+            lancarExcecao(11);
         } catch (Exception e) {
             System.out.println("Exceção capturada: " + e.getMessage());
         }
@@ -32,10 +32,10 @@ public class ExcecaoPrincipal {
     public static void lancarExcecao(int numero) throws Exception {
 
         if (numero > 10) {
-            throw new Exception("Número deve ser negativo");
+            throw new Exception("Numero maior que 10");
         }
 
-        System.out.println("Número é válido: " + numero);
+        System.out.println("Numero menor que 10: " + numero);
     }
 
 }
