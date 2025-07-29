@@ -1,8 +1,10 @@
 # 📚 Fundamentos Java - Jornada Java
 
-Este repositório contém exercícios práticos do curso **Jornada Java** ministrado por **@danieleleaoe** | Dev Java. Os exercícios abrangem os conceitos fundamen**Desenvolvido durante o curso Jornada Java por @danieleleaoe | Dev Java**
+Este repositório contém exercícios práticos do curso **Jornada Java** ministrado por **@danieleleaoe** | Dev Java. Os exercícios abrangem os conceitos fundamentais da linguagem Java, desde sintaxe básica até conceitos avançados de programação orientada a objetos.
 
-*Última atualização: 18 de Julho de 2025*s da linguagem Java, desde sintaxe básica até conceitos avançados de programação orientada a objetos.
+**Desenvolvido durante o curso Jornada Java por @danieleleaoe | Dev Java**
+
+_Última atualização: 28 de Julho de 2025_
 
 ## 🎯 Sobre o Curso
 
@@ -47,7 +49,9 @@ fundamentos_java/
 │   └── Iterador.java                  # Iteração em coleções
 │
 ├── ⚠️ excecoes/
-│   └── ExcecaoPrincipal.java          # Tratamento de exceções
+│   ├── ExcecaoPrincipal.java          # Tratamento de exceções
+│   ├── SacarException.java            # Exceção personalizada para saque
+│   └── SaldoInsuficienteException.java # Exceção para saldo insuficiente
 │
 ├── 🧬 heranca/
 │   ├── Veiculo.java                   # Classe abstrata base
@@ -58,10 +62,16 @@ fundamentos_java/
 │   ├── ContratoVeiculo2.java          # Interface alternativa
 │   └── PricipalVeiculo.java           # Classe principal
 │
-└── 🔒 modificadores/
-    ├── ExemploFinalStatic.java        # Modificadores final e static
-    ├── Pessoa.java                    # Encapsulamento
-    └── PessoaPricipal.java            # Classe principal
+├── 🔒 modificadores/
+│   ├── ExemploFinalStatic.java        # Modificadores final e static
+│   ├── Pessoa.java                    # Encapsulamento
+│   └── PessoaPricipal.java            # Classe principal
+│
+└── 📁 entradaSaida/
+    ├── Console.java                   # Entrada de dados via console
+    ├── leituraEscrita.java           # Leitura e escrita de arquivos
+    ├── leituraEscritaBuffer.java     # Buffer para otimização I/O
+    └── ManipulacaoArquivo.java       # Manipulação avançada de arquivos
 ```
 
 ## 🎓 Conceitos Abordados
@@ -101,7 +111,21 @@ fundamentos_java/
 - ✅ **Abstração** - Classes abstratas e interfaces
 - ✅ **Encapsulamento** - Modificadores de acesso
 
-### 6. **Modificadores de Acesso**
+### 6. **Tratamento de Exceções**
+
+- ✅ Estrutura `try-catch-finally`
+- ✅ Exceções personalizadas
+- ✅ Hierarquia de exceções
+- ✅ Boas práticas no tratamento de erros
+
+### 7. **Entrada e Saída de Dados**
+
+- ✅ Leitura de dados via console
+- ✅ Manipulação de arquivos
+- ✅ BufferedReader e BufferedWriter
+- ✅ Otimização de I/O
+
+### 8. **Modificadores de Acesso**
 
 - ✅ `public`, `private`, `protected`
 - ✅ Modificador `static`
@@ -167,7 +191,13 @@ java estruturaDeDados.AulaArray
 ### ⚠️ Tratamento de Exceções
 
 - **Pasta:** `excecoes/`
-- **Conceitos:** Try-catch-finally, tipos de exceções, tratamento de erros
+- **Arquivos:** `ExcecaoPrincipal.java`, `SacarException.java`, `SaldoInsuficienteException.java`
+- **Conceitos:** Try-catch-finally, exceções personalizadas, hierarquia de exceções
+
+### 📁 Sistema de Entrada e Saída
+
+- **Pasta:** `entradaSaida/`
+- **Conceitos:** Manipulação de arquivos, BufferedReader/Writer, Scanner, I/O otimizado
 
 ### 🔤 Manipulação Avançada de Strings
 
@@ -183,16 +213,46 @@ Ao completar estes exercícios, você será capaz de:
 - ✅ Utilizar estruturas de dados apropriadas para cada situação
 - ✅ Aplicar conceitos de POO (herança, polimorfismo, encapsulamento)
 - ✅ Trabalhar com modificadores de acesso e boas práticas
+- ✅ Trabalhar com entrada e saída de dados
+- ✅ Manipular arquivos e streams de dados
 - ✅ Desenvolver aplicações Java bem estruturadas e robustas
 - ✅ Tratar exceções e erros adequadamente
 - ✅ Otimizar performance com StringBuilder e wrapper classes
 
-## � Estatísticas do Projeto
+## 📊 Estatísticas do Projeto
 
-- 📁 **4 módulos principais** organizados por conceito
-- 📄 **18+ arquivos Java** com exercícios práticos
+- 📁 **5 módulos principais** organizados por conceito
+- 📄 **25+ arquivos Java** com exercícios práticos
 - 🎯 **8 categorias** de conceitos fundamentais
-- 🏗️ **3 projetos destacados** para demonstração de conceitos avançados
+- 🏗️ **4 projetos destacados** para demonstração de conceitos avançados
+- 💾 **Sistema completo** de manipulação de arquivos e I/O
+
+## 🔥 Recursos Avançados
+
+### 💡 Exceções Personalizadas
+
+- `SacarException.java` - Exceção específica para operações de saque
+- `SaldoInsuficienteException.java` - Tratamento de saldo insuficiente
+- Demonstração prática de criação e uso de exceções customizadas
+
+### 🏦 Sistema Bancário Completo
+
+- Implementação robusta com tratamento de exceções
+- Validações de negócio aplicadas
+- Exemplo real de aplicação OOP
+
+### 📂 Manipulação de Arquivos
+
+- Leitura e escrita básica de arquivos
+- Uso de buffers para otimização de performance
+- Tratamento adequado de exceções de I/O
+- Console interativo para entrada de dados
+
+### 🚗 Hierarquia de Veículos
+
+- Implementação completa de herança
+- Uso de classes abstratas e interfaces
+- Polimorfismo em ação com diferentes tipos de veículos
 
 ## �🔗 Links Úteis
 
@@ -208,4 +268,4 @@ Este projeto é destinado para fins educacionais como parte do curso **Jornada J
 
 **Desenvolvido durante o curso Jornada Java por @danieleleaoe | Dev Java**
 
-_Data de criação: Julho de 2025_
+_Última atualização: 28 de Julho de 2025_
