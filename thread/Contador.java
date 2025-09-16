@@ -1,11 +1,5 @@
 package thread;
 
-<<<<<<<HEAD
-
-import java.nio.channels.Pipe.SourceChannel;
-
-=======>>>>>>>76 a5609aa55ca49d74c97bf6ad6a401bbd4ab2aa
-
 public class Contador extends Thread {
 
     private String threadName;
@@ -19,19 +13,11 @@ public class Contador extends Thread {
 
     public void run() {
         for (int i = 0; i < 10; i++) {
-<<<<<<< HEAD
-            System.out.println("Thread Name: " + threadName + " : " + i);
-            try {
-                Thread.sleep(this.tempo);
-            } catch (Exception e) {
-                System.out.println("Deu ruim " + e.getMessage());
-=======
             System.out.println("Thread Name: " + threadName + " - Count: " + i);
             try {
                 Thread.sleep(this.tempo);
             } catch (InterruptedException e) {
                 System.err.println("Thread " + threadName + " was interrupted.");
->>>>>>> 76a5609aa55ca49d74c97bf6ad6a401bbd4ab2aa
             }
         }
     }
